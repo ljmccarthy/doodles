@@ -70,13 +70,14 @@ int main()
             for (int rotation = 0; rotation < 4; rotation++) {
                 uint16_t row_bits = tetrominoes[piece][rotation] >> ((3 - row) * 4);
                 printf("    %s%s%s%s",
-                    (row_bits & 8) ? "██" : "  ",
-                    (row_bits & 4) ? "██" : "  ",
-                    (row_bits & 2) ? "██" : "  ",
-                    (row_bits & 1) ? "██" : "  ");
+                    (row_bits & 8) ? "██" : "░░",
+                    (row_bits & 4) ? "██" : "░░",
+                    (row_bits & 2) ? "██" : "░░",
+                    (row_bits & 1) ? "██" : "░░");
             }
             putchar('\n');
         }
     }
+    putchar('\n');
     return 0;
 }
