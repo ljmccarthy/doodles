@@ -1,3 +1,11 @@
+/*
+ * hsl2rgb
+ *
+ * Convert colour from HSL colourspace to RGB.
+ *
+ * Luke McCarthy 2023-09-26
+ */
+
 #include <math.h>
 #include <stdint.h>
 #include <stdio.h>
