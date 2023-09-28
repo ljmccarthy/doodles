@@ -50,7 +50,7 @@
  *  .... 0000 0    .#.. 0100 4    .##. 0110 6    #... 1000 8
  *  .... 0000 0    .... 0000 0    .... 0000 0    .... 0000 0
  */
-static uint16_t const tetrominoes[7][4] = {
+static const uint16_t tetrominoes[7][4] = {
     {0x0F00, 0x2222, 0x00F0, 0x4444}, // I
     {0x8E00, 0x6440, 0x0E20, 0x44C0}, // J
     {0x2E00, 0x4460, 0x0E80, 0xC440}, // L
@@ -60,7 +60,7 @@ static uint16_t const tetrominoes[7][4] = {
     {0xC600, 0x2640, 0x0C60, 0x4C80}  // Z
 };
 
-static char const piece_name[7] = "IJLOSTZ";
+static const char piece_name[7] = "IJLOSTZ";
 
 int main()
 {

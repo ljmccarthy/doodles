@@ -38,7 +38,7 @@ uint32_t rgb_from_hsl(float hue, float sat, float lig)
     return RGB(r, g, b);
 }
 
-int main(int argc, char const *const *argv)
+int main(int argc, const char *const *argv)
 {
     if (argc != 4) {
         fprintf(stderr, "usage: %s HUE SATURATION LIGHTNESS\n", argv[0]);
